@@ -23,7 +23,7 @@ const NavBar = () => {
                 <span id='hamburguer' onClick={toggleHamburguer}>
                     <FiAlignRight size='2.5rem' color='#114B5F'/>
                 </span>
-                <div id='button-group' style={{display: toggle ? 'flex' : 'none'}}>
+                <div id='button-group' className={toggle ? 'show' : ''}>
                     <LoginButton>Login</LoginButton>
                     <SignUpButton>Cadastre-se</SignUpButton>
                 </div>
