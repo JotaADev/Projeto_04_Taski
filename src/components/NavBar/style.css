@@ -2,7 +2,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 6rem;
+    height: 12vh;
+    transition: box-shadow 0.3s ease;
+}
+
+.scrolled {
     -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
@@ -10,7 +14,7 @@ nav {
 
 #logo {
     height: 70%;
-    z-index: 1;
+    z-index: 2;
 }
 
 #hamburguer {
@@ -22,13 +26,24 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .show {
     display: flex !important;
-}
+    animation: fadeIn 0.5s ease forwards;
+}    
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 767px) {
     nav {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -37,7 +52,7 @@ nav {
 
     #hamburguer {
         display: block;
-        z-index: 1;
+        z-index: 2;
     }
 
     #button-group {
@@ -52,5 +67,9 @@ nav {
         -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
         -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
         box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
+        background-color: #FFFFFF;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 }

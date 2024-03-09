@@ -11,9 +11,12 @@ export const LoginButton = styled.a`
         color: #1C1C1C;
     }
 
-    @media screen and (max-width: 499px) {
+    @media screen and (max-width: 767px) {
         margin-right: 0;
         margin-bottom: 1rem;
         margin-top: 1rem;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
     }
 `

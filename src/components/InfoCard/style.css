@@ -1,0 +1,35 @@
+.box-info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 30rem;
+    background-color: #D8F5FF;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 3rem 2rem;
+}
+
+.title-info-card {
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.text-info-card {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .box-info-card {
+        margin: 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .box-info-card {
+        margin: 2rem 2rem;
+    }
+}

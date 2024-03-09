@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SignUpButton = styled.button`
+export const StyledButton = styled.button`
     height: 3rem;
     padding: 1rem;
     border: 1px solid #114B5F;
@@ -8,6 +8,7 @@ export const SignUpButton = styled.button`
     background-color: #114B5F;
     color: #FFFFFF;
     font-weight: bold;
+    margin-bottom: 1rem;
 
     &:hover {
         cursor: pointer;
@@ -18,9 +19,9 @@ export const SignUpButton = styled.button`
     }
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 1rem;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
+        margin-bottom: 1rem;
     }
 `
