@@ -3,7 +3,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #114B5F;
+    border-top: 1px solid #114B5F;
 }
 
 .link-group {
@@ -28,11 +28,11 @@ footer {
 
     footer img {
         height: 8vh;
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
 
     .link-group {
-        margin: 1rem 0;
+        margin: 1rem 0 3rem 0;
     }
 
 }
