@@ -1,0 +1,52 @@
+:root {
+    --swiper-theme-color: #1C1C1C !important;
+}
+
+div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    margin: 2rem 0 6rem 0;
+    height: 16rem;
+    width: 90%;
+}
+
+div.swiper-wrapper {
+    width: 100%;
+}
+
+div.swiper-slide.swiper-slide-prev, div.swiper-slide.swiper-slide-active, div.swiper-slide.swiper-slide-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev, .swiper-button-disabled, .swiper-button-next {
+    font-weight: bold;
+}
+
+.comment-area {
+    background-color: #D8F5FF;
+    width: 70%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        width: 100%;
+    }
+
+    .comment {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}

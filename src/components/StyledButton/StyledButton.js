@@ -8,7 +8,8 @@ export const StyledButton = styled.button`
     background-color: #114B5F;
     color: #FFFFFF;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    width: ${props => props.width};
 
     &:hover {
         cursor: pointer;

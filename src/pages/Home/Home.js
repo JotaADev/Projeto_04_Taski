@@ -1,10 +1,14 @@
 import React from 'react';
 import './style.css';
+import { optionsPrice, clientsComment, inforCardsContent } from './Data';
 
 // Components:
 import NavBar from '../../components/NavBar/NavBar';
 import { StyledButton } from '../../components/StyledButton/StyledButton';
 import InfoCard from '../../components/InfoCard/InfoCard';
+import PriceCard from '../../components/PriceCard/PriceCard';
+import SwiperComments from '../../components/SwiperComments/SwiperComments';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
     return (
@@ -22,23 +26,31 @@ const Home = () => {
                 </div>
                 <h2 className='subtitle'>Gestão <span className='custom-word'>customizada</span> e inteligente de chamados para você</h2>
                 <div className='grid-card'>
-                    <InfoCard
-                        title='Controle de SLA'
-                        srcImage='img/campaign.png'
-                        text='Com o nosso sistema, o controle de SLA é uma realidade. Nunca mais perca um prazo importante. Estabeleça tempos de resposta e resolução para cada tipo de chamado, garantindo a satisfação do cliente e a eficiência operacional.'
-                    />
-                    <InfoCard
-                        title='Sistema colaborativo'
-                        srcImage='img/meeting.png'
-                        text='Fomente a colaboração entre equipes com nossa plataforma. Compartilhe informações, discuta soluções e trabalhe em conjunto para resolver os chamados de forma mais eficaz. Uma comunicação fluida leva a resultados mais rápidos e satisfatórios.'
-                    />
-                    <InfoCard
-                        title='Acesse de qualquer dispositivo'
-                        srcImage='img/mobile.png'
-                        text='Acesse nosso sistema de gestão de chamados de onde estiver. Seja no escritório, em casa ou em trânsito, tenha sempre acesso às informações necessárias para gerenciar seus chamados. Não importa se é desktop, tablet ou smartphone, estamos sempre disponíveis para você.'
-                    />
+                    {inforCardsContent.map((info) => (
+                        <InfoCard key={info.id}
+                            title={info.title}
+                            srcImage={info.src}
+                            text={info.text}
+                        />
+                    ))}
+                </div>
+                <h2 className='subtitle'>Escolha o melhor plano para você e sua <span className='custom-word'>equipe!</span></h2>
+                <div className='grid-card-price'>
+                    {optionsPrice.map((plan) => (
+                        <PriceCard key={plan.plan}
+                            title={plan.plan}
+                            price={plan.price}
+                            options={plan.options}
+                        />
+                    ))}
+                </div>
+                <h2 className='subtitle-price'>Sua equipe é ainda maior? Não tem problema, entre em contato com um de nossos <a href='/' className='custom-word'>especialistas!</a></h2>
+                <h2 className='subtitle'>Veja o que os nossos <span className='custom-word'>clientes</span> tem a dizer!</h2>
+                <div className='swiper-area'>
+                    <SwiperComments comments={clientsComment}/>
                 </div>
             </main>
+            <Footer/>
         </>
     );
 }

@@ -1,0 +1,46 @@
+.price-card {
+    min-width: 22rem;
+    max-width: 22rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #114B5F;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    margin: 4rem 1rem;
+}
+
+.title-price-card {
+    font-size: 1.6rem;
+    color: #114B5F;
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.option-price-card {
+    display: flex;
+    align-items: center;
+    width: 22rem;
+    margin-bottom: 1rem;
+}
+
+.option-price-card img {
+    width: 25px;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .price-card {
+        margin: 2rem 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}

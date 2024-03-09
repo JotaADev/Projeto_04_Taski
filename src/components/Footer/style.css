@@ -1,0 +1,41 @@
+footer {
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #114B5F;
+}
+
+.link-group {
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+.link:hover {
+    cursor: pointer;
+    color: #114B5F;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer img {
+        height: 8vh;
+        margin: 1rem 0;
+    }
+
+    .link-group {
+        margin: 1rem 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}

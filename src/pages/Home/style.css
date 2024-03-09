@@ -17,8 +17,15 @@
     text-align: center;
 }
 
+.subtitle-price {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
 .custom-word {
     color: #114B5F;
+    text-decoration: none;
 }
 
 .grid-card {
@@ -26,7 +33,19 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+}
+
+.grid-card-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.swiper-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 767px) {
